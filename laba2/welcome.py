@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'D:\Python\welcome.ui'
+# Form implementation generated from reading ui file 'D:\Python\database\welcome.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.4
 #
@@ -19,20 +19,20 @@ class Ui_WelcomeWindow(object):
         WelcomeWindow.setMaximumSize(QtCore.QSize(840, 250))
         self.centralwidget = QtWidgets.QWidget(WelcomeWindow)
         self.centralwidget.setObjectName("centralwidget")
-        self.pushButton = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton.setGeometry(QtCore.QRect(350, 170, 131, 41))
-        self.pushButton.setObjectName("pushButton")
-        self.lineEdit = QtWidgets.QLineEdit(self.centralwidget)
-        self.lineEdit.setGeometry(QtCore.QRect(210, 130, 411, 31))
-        self.lineEdit.setStyleSheet("font: 75 12pt \"Arial\";")
-        self.lineEdit.setText("")
-        self.lineEdit.setAlignment(QtCore.Qt.AlignCenter)
-        self.lineEdit.setObjectName("lineEdit")
-        self.labelMessage = QtWidgets.QLabel(self.centralwidget)
-        self.labelMessage.setGeometry(QtCore.QRect(280, 80, 271, 41))
-        self.labelMessage.setStyleSheet("font: 87 14pt \"Arial Black\";")
-        self.labelMessage.setAlignment(QtCore.Qt.AlignCenter)
-        self.labelMessage.setObjectName("labelMessage")
+        self.push_connect_button = QtWidgets.QPushButton(self.centralwidget)
+        self.push_connect_button.setGeometry(QtCore.QRect(350, 170, 131, 41))
+        self.push_connect_button.setObjectName("push_connect_button")
+        self.enter_database_line = QtWidgets.QLineEdit(self.centralwidget)
+        self.enter_database_line.setGeometry(QtCore.QRect(210, 130, 411, 31))
+        self.enter_database_line.setStyleSheet("font: 75 12pt \"Arial\";")
+        self.enter_database_line.setText("")
+        self.enter_database_line.setAlignment(QtCore.Qt.AlignCenter)
+        self.enter_database_line.setObjectName("enter_database_line")
+        self.enter_database_label = QtWidgets.QLabel(self.centralwidget)
+        self.enter_database_label.setGeometry(QtCore.QRect(280, 80, 271, 41))
+        self.enter_database_label.setStyleSheet("font: 87 14pt \"Arial Black\";")
+        self.enter_database_label.setAlignment(QtCore.Qt.AlignCenter)
+        self.enter_database_label.setObjectName("enter_database_label")
         WelcomeWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(WelcomeWindow)
@@ -41,5 +41,5 @@ class Ui_WelcomeWindow(object):
     def retranslateUi(self, WelcomeWindow):
         _translate = QtCore.QCoreApplication.translate
         WelcomeWindow.setWindowTitle(_translate("WelcomeWindow", "Connection"))
-        self.pushButton.setText(_translate("WelcomeWindow", "CONNECT"))
-        self.labelMessage.setText(_translate("WelcomeWindow", "ENTER DATABASE NAME"))
+        self.push_connect_button.setText(_translate("WelcomeWindow", "CONNECT"))
+        self.enter_database_label.setText(_translate("WelcomeWindow", "ENTER DATABASE NAME"))

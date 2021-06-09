@@ -101,21 +101,21 @@
                </widget>
               </item>
               <item>
-               <widget class="QLineEdit" name="genreSearch"/>
+               <widget class="QLineEdit" name="companies_genre_search"/>
               </item>
              </layout>
             </item>
             <item>
              <layout class="QHBoxLayout" name="horizontalLayout_10">
               <item>
-               <widget class="QPushButton" name="searchGenreButton">
+               <widget class="QPushButton" name="companies_search_button">
                 <property name="text">
                  <string>Search</string>
                 </property>
                </widget>
               </item>
               <item>
-               <widget class="QPushButton" name="deleteGenreButton">
+               <widget class="QPushButton" name="companies_delete_button">
                 <property name="text">
                  <string>Delete</string>
                 </property>
@@ -155,18 +155,18 @@
             <item>
              <layout class="QHBoxLayout" name="horizontalLayout_12">
               <item>
-               <widget class="QLineEdit" name="nameCompany"/>
+               <widget class="QLineEdit" name="company_name"/>
               </item>
               <item>
-               <widget class="QLineEdit" name="emailCompany"/>
+               <widget class="QLineEdit" name="company_email"/>
               </item>
               <item>
-               <widget class="QLineEdit" name="releaseCompany"/>
+               <widget class="QLineEdit" name="company_release"/>
               </item>
              </layout>
             </item>
             <item>
-             <widget class="QPushButton" name="addCompanyButton">
+             <widget class="QPushButton" name="add_company_button">
               <property name="text">
                <string>Add company</string>
               </property>
@@ -248,24 +248,24 @@
             <item>
              <layout class="QHBoxLayout" name="horizontalLayout_16">
               <item>
-               <widget class="QLineEdit" name="ItemOrders_2"/>
+               <widget class="QLineEdit" name="game_title"/>
               </item>
               <item>
-               <widget class="QLineEdit" name="QuantityOrders_2"/>
+               <widget class="QLineEdit" name="game_version"/>
               </item>
               <item>
-               <widget class="QLineEdit" name="QuantityOrders_4"/>
+               <widget class="QLineEdit" name="game_release"/>
               </item>
               <item>
-               <widget class="QLineEdit" name="QuantityOrders_5"/>
+               <widget class="QLineEdit" name="game_genre"/>
               </item>
               <item>
-               <widget class="QLineEdit" name="QuantityOrders_3"/>
+               <widget class="QLineEdit" name="game_author"/>
               </item>
              </layout>
             </item>
             <item>
-             <widget class="QPushButton" name="addButtonOrders_2">
+             <widget class="QPushButton" name="add_game_button">
               <property name="text">
                <string>Add game</string>
               </property>
@@ -298,21 +298,21 @@
              </widget>
             </item>
             <item>
-             <widget class="QLineEdit" name="genreSearch_3"/>
+             <widget class="QLineEdit" name="games_genre_search"/>
             </item>
            </layout>
           </item>
           <item>
            <layout class="QHBoxLayout" name="horizontalLayout_19">
             <item>
-             <widget class="QPushButton" name="searchButtonAssortment_4">
+             <widget class="QPushButton" name="games_search_button">
               <property name="text">
                <string>Search</string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QPushButton" name="deleteButtonAssortment_4">
+             <widget class="QPushButton" name="games_delete_button">
               <property name="text">
                <string>Delete</string>
               </property>
@@ -328,31 +328,32 @@
     </layout>
    </widget>
   </widget>
-  <widget class="QMenuBar" name="menuBar">
+  <widget class="QMenuBar" name="menu_bar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
      <width>851</width>
-     <height>26</height>
+     <height>21</height>
     </rect>
    </property>
-   <widget class="QMenu" name="menuDatabase">
+   <widget class="QMenu" name="database_menu">
     <property name="title">
      <string>Database</string>
     </property>
-    <addaction name="actionConnect"/>
-    <addaction name="actionDrop"/>
+    <addaction name="connect_action"/>
+    <addaction name="drop_action"/>
    </widget>
-   <widget class="QMenu" name="menuTable">
+   <widget class="QMenu" name="table_menu">
     <property name="title">
      <string>Table</string>
     </property>
-    <addaction name="actionClear_companies"/>
-    <addaction name="actionClear_games"/>
+    <addaction name="clear_companies_action"/>
+    <addaction name="clear_games_action"/>
+    <addaction name="clear_all_action"/>
    </widget>
-   <addaction name="menuDatabase"/>
-   <addaction name="menuTable"/>
+   <addaction name="database_menu"/>
+   <addaction name="table_menu"/>
   </widget>
   <action name="actionChoose_DB">
    <property name="text">
@@ -364,7 +365,7 @@
     <string>Connect</string>
    </property>
   </action>
-  <action name="actionDrop">
+  <action name="drop_action">
    <property name="text">
     <string>Drop</string>
    </property>
@@ -374,12 +375,12 @@
     <string>Clear companies</string>
    </property>
   </action>
-  <action name="actionClear_games">
+  <action name="clear_games_action">
    <property name="text">
     <string>Clear games</string>
    </property>
   </action>
-  <action name="actionConnect">
+  <action name="connect_action">
    <property name="text">
     <string>Connect</string>
    </property>
@@ -389,9 +390,14 @@
     <string>Drop</string>
    </property>
   </action>
-  <action name="actionClear_companies">
+  <action name="clear_companies_action">
    <property name="text">
     <string>Clear companies</string>
+   </property>
+  </action>
+  <action name="clear_all_action">
+   <property name="text">
+    <string>Clear all</string>
    </property>
   </action>
  </widget>

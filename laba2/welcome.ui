@@ -26,7 +26,7 @@
    <string>Connection</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="push_connect_button">
     <property name="geometry">
      <rect>
       <x>350</x>
@@ -39,7 +39,7 @@
      <string>CONNECT</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit">
+   <widget class="QLineEdit" name="enter_database_line">
     <property name="geometry">
      <rect>
       <x>210</x>
@@ -58,7 +58,7 @@
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="labelMessage">
+   <widget class="QLabel" name="enter_database_label">
     <property name="geometry">
      <rect>
       <x>280</x>
