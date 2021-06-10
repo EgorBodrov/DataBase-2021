@@ -60,13 +60,13 @@
         </size>
        </property>
        <property name="currentIndex">
-        <number>1</number>
+        <number>0</number>
        </property>
        <widget class="QWidget" name="tab_3">
         <attribute name="title">
          <string>Companies</string>
         </attribute>
-        <widget class="QTableWidget" name="tableCompaniesWidget">
+        <widget class="QTableWidget" name="companies_table">
          <property name="geometry">
           <rect>
            <x>0</x>
@@ -111,13 +111,6 @@
                <widget class="QPushButton" name="companies_search_button">
                 <property name="text">
                  <string>Search</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QPushButton" name="companies_delete_button">
-                <property name="text">
-                 <string>Delete</string>
                 </property>
                </widget>
               </item>
@@ -181,7 +174,7 @@
         <attribute name="title">
          <string>Games</string>
         </attribute>
-        <widget class="QTableWidget" name="tableWidgetOrders_2">
+        <widget class="QTableWidget" name="games_table">
          <property name="geometry">
           <rect>
            <x>0</x>
@@ -334,7 +327,7 @@
      <x>0</x>
      <y>0</y>
      <width>851</width>
-     <height>21</height>
+     <height>26</height>
     </rect>
    </property>
    <widget class="QMenu" name="database_menu">
@@ -352,8 +345,15 @@
     <addaction name="clear_games_action"/>
     <addaction name="clear_all_action"/>
    </widget>
+   <widget class="QMenu" name="menuRecord">
+    <property name="title">
+     <string>Record</string>
+    </property>
+    <addaction name="delete_record_action"/>
+   </widget>
    <addaction name="database_menu"/>
    <addaction name="table_menu"/>
+   <addaction name="menuRecord"/>
   </widget>
   <action name="actionChoose_DB">
    <property name="text">
@@ -398,6 +398,11 @@
   <action name="clear_all_action">
    <property name="text">
     <string>Clear all</string>
+   </property>
+  </action>
+  <action name="delete_record_action">
+   <property name="text">
+    <string>Delete</string>
    </property>
   </action>
  </widget>

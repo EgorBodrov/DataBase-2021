@@ -61,9 +61,9 @@
    <widget class="QLabel" name="enter_database_label">
     <property name="geometry">
      <rect>
-      <x>280</x>
+      <x>240</x>
       <y>80</y>
-      <width>271</width>
+      <width>351</width>
       <height>41</height>
      </rect>
     </property>

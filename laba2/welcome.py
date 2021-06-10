@@ -29,7 +29,7 @@ class Ui_WelcomeWindow(object):
         self.enter_database_line.setAlignment(QtCore.Qt.AlignCenter)
         self.enter_database_line.setObjectName("enter_database_line")
         self.enter_database_label = QtWidgets.QLabel(self.centralwidget)
-        self.enter_database_label.setGeometry(QtCore.QRect(280, 80, 271, 41))
+        self.enter_database_label.setGeometry(QtCore.QRect(240, 80, 351, 41))
         self.enter_database_label.setStyleSheet("font: 87 14pt \"Arial Black\";")
         self.enter_database_label.setAlignment(QtCore.Qt.AlignCenter)
         self.enter_database_label.setObjectName("enter_database_label")
