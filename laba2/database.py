@@ -8,13 +8,13 @@ class DataBase:
         self.user = user
         self.password = password
         self.db_name = db_name
-        self.engine = None
-        self.cursor = None
+        #self.engine = None
+        #self.cursor = None
         self.connect_database("postgres")
         self.cursor.execute("SELECT * FROM pg_catalog.pg_database WHERE datname = %s", (self.db_name,))
         flag = self.cursor.fetchone()
         if flag is None:
-            self.cursor.execute(sql.SQL(f"CREATE DATABASE {sql.Identifier(self.db_name)}"))
+            self.cursor.execute(sql.SQL("CREATE DATABASE {}").format(sql.Identifier(self.db_name)))
         self.engine.close()
         self.connect_database(self.db_name)
         if flag is None:
@@ -30,7 +30,7 @@ class DataBase:
 
     def drop_database(self):
         self.connect_database("postgres")
-        self.cursor.callproc("drop_database", (self.db_name,))
+        self.cursor.execute(sql.SQL(f"DROP DATABASE {self.db_name}"))
         self.engine.close()
         del self
 
@@ -42,8 +42,8 @@ class DataBase:
         self.cursor.callproc("get_games")
         return self.cursor.fetchone()[0]
 
-    def new_company(self, name, email):
-        self.cursor.callproc("new_company", (name, email,))
+    def new_company(self, name, email, release):
+        self.cursor.callproc("new_company", (name, email, release, ))
 
     def new_game(self, title, version, release, genre, author):
         self.cursor.callproc("new_game", (title, version, release, genre, author, ))
@@ -68,9 +68,6 @@ class DataBase:
 
     def delete_game(self, genre):
         self.cursor.callproc("delete_game", (genre, ))
-
-    def delete_company(self, name):
-        self.cursor.callproc("delete_company", (name, ))
 
     def delete_game_tuple(self, id):
         self.cursor.callproc("delete_game_tuple", (id, ))
