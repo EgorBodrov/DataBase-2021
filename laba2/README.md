@@ -33,4 +33,4 @@
 и демонстрация работы вашего приложения на практике в виде видео с комментариями/
 
 [Видео на ютубе](https://www.youtube.com/watch?v=g1dHj4YrjFM&ab_channel=%D0%95%D0%B3%D0%BE%D1%80%D0%91%D0%BE%D0%B4%D1%80%D0%BE%D0%B2)
-Или тут: https://drive.google.com/file/d/1LNKgzfG1lTaYQNUlzlBfrIQ_RKEq-2NR/view?usp=sharing
+Или тут: https://drive.google.com/file/d/1Jz2v4lGef5h0GGxTKbwKRZfjVBGNRL5f/view?usp=sharing
